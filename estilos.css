@@ -1,5 +1,5 @@
 .cabecalho{
-    background-color: #e02960;
+    background-color: #c1bdbe;
     text-align: center;
     font-size: medium;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -8,17 +8,53 @@
 }
 
 .corpo{
-    background-color: pink;
+    background-color: #c1bdbe;
     text-align: center;
     font-size: medium;
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
-corpo{
-    background-color: #1e39b1;
-    text-align: center;
-    font-size: medium;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+a:link {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: rgb(255, 0, 98);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:active {
+    color: rgb(255, 0, 98);
+    background-color: transparent;
+    text-decoration: underline;
+  }
 
-}
+  .button {
+    background-color: #7d857d; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+  
+  .button1 {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  
+  .button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
