@@ -1,19 +1,67 @@
-.cabecalho{
-    background-color: #c1bdbe;
-    text-align: center;
-    font-size: medium;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    
+body {
+  font-family: Arial, Helvetica, sans-serif;
+background-color: rgb(163, 98, 248) ;
+
+  
+}
+
+/* Style the header */
+header {
+  background-color: rgb(159, 41, 222);
+  padding: 1px;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(255, 255, 255)
 
 }
 
-.corpo{
-    background-color: #c1bdbe;
-    text-align: center;
-    font-size: medium;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 15%;
+  height: 430px; /* only for demonstration, should be removed */
+  background: rgb(163, 98, 248);
+  padding: 60px;
+ 
 }
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  width: 100%;
+  background-color: rgb(159, 41, 222);
+  height: 95px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(120, 52, 170);
+  padding: 10px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
 
 a:link {
     color: rgb(0, 0, 0);
@@ -58,3 +106,6 @@ a:link {
   .button2:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   }
+
+
+
